@@ -50,3 +50,8 @@ p {
   background-color: black;
   border: 0;
 }
+
+.small-text {
+    /* The rem unit stands for root em, and is relative to the font size of the html element. */
+    font-size: 0.85rem;
+}
