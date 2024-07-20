@@ -54,6 +54,12 @@ column-reverse: vertical axis with flex items from bottom to top */
 
     /* The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical. To vertically center your images, give your .gallery selector an align-items property with center as the value. */
     align-items: center;
+
+    padding: 20px 10px;
+
+    /* As we have set a specific max-width of 1400px, the images will not be centered now. They will be centered inside the flex container but not in the body. So we specify a margin: 0 auto to center the gallery div inside the body div */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* .gallery {
