@@ -8,30 +8,44 @@ height + padding + border = actual height of an element */
 /* If you set box-sizing: border-box; on an element, padding and border are included in the width and height: */
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color:#f5f6f7;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f6f7;
 }
 
 .header {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 32px;
-    background-color: #0a0a23;
-    color: #fff;
-    border-bottom: 4px solid #fdb347;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
 }
-  
+
 .gallery img {
-    width: 100%;
-    height: 300px;
-    max-width: 350px;
+  width: 100%;
+  height: 300px;
+  max-width: 350px;
+
+  /*
+    object-fit property is used to specify how the content of a replaced element, such as an image or a video, should be resized to fit its container.
+    This property is particularly useful for images and videos where you want to control how they are displayed within a container of a fixed size.
+    If the container element does not have a fixed size, the element will take all the space it requires
+
+    fill (default):
+        The content is resized to fill the container. If necessary, the content will be stretched or squished to fit. The image will be distorted if its aspect ratio does not match the container's aspect ratio.
+    contain:
+        The content is resized to fit within the container while preserving its aspect ratio. The image will be scaled to fit inside the container, with potential empty space on either side or top and bottom.
+    cover:
+        The content is resized to cover the entire container while preserving its aspect ratio. The image will fill the container completely, but parts of it may be cut off to maintain the aspect ratio.
+  */
+  object-fit: cover;
 }
 
 /* Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container. */
@@ -45,21 +59,21 @@ column-reverse: vertical axis with flex items from bottom to top */
 /* if we dont specify flex-wrap property, it will make horizontal scrollbar as the content will overflow the viewport */
 /* The flex-wrap property determines how your flex items behave when the flex container is too small. Setting it to wrap will allow the items to wrap to the next row or column. nowrap (default) will prevent your items from wrapping and shrink them if needed. */
 .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* no-wrap -> single-line, wrap -> multiline */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* no-wrap -> single-line, wrap -> multiline */
 
-    /* The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them. */
-    justify-content: center;
+  /* The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them. */
+  justify-content: center;
 
-    /* The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical. To vertically center your images, give your .gallery selector an align-items property with center as the value. */
-    align-items: center;
+  /* The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical. To vertically center your images, give your .gallery selector an align-items property with center as the value. */
+  align-items: center;
 
-    padding: 20px 10px;
+  padding: 20px 10px;
 
-    /* As we have set a specific max-width of 1400px, the images will not be centered now. They will be centered inside the flex container but not in the body. So we specify a margin: 0 auto to center the gallery div inside the body div */
-    max-width: 1400px;
-    margin: 0 auto;
+  /* As we have set a specific max-width of 1400px, the images will not be centered now. They will be centered inside the flex container but not in the body. So we specify a margin: 0 auto to center the gallery div inside the body div */
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* .gallery {
@@ -72,4 +86,3 @@ img {
     padding: 5px;
     border: 5px solid blue;
 } */
-
