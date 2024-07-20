@@ -48,6 +48,7 @@ column-reverse: vertical axis with flex items from bottom to top */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* no-wrap -> single-line, wrap -> multiline */
+    justify-content: center; /* The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them. */
 }
 
 /* .gallery {
