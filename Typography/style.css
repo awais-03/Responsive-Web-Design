@@ -56,6 +56,21 @@ p {
     font-size: 0.85rem;
 }
 
+.calories-info {
+    display: flex;
+    justify-content: space-between;
+
+    /* The align-items property in CSS is used in flexbox layouts to control the alignment of flex items along the cross axis (the axis perpendicular to the main axis defined by flex-direction) */
+    /* flex-direction is row */
+    /* flex-start:
+        Aligns flex items at the start of the cross axis. Items will be aligned at the top of the container
+    flex-end:
+        Aligns flex items at the end of the cross axis. Items will be aligned at the bottom of the container
+    center:
+        Aligns flex items in the center of the cross axis. Items will be vertically centered within the container */
+    align-items: flex-end;
+}
+
 .calories-info h2 {
     margin: 0;
 }
