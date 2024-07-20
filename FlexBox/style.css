@@ -48,7 +48,12 @@ column-reverse: vertical axis with flex items from bottom to top */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* no-wrap -> single-line, wrap -> multiline */
-    justify-content: center; /* The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them. */
+
+    /* The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them. */
+    justify-content: center;
+
+    /* The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical. To vertically center your images, give your .gallery selector an align-items property with center as the value. */
+    align-items: center;
 }
 
 /* .gallery {
