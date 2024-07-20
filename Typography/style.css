@@ -55,3 +55,7 @@ p {
     /* The rem unit stands for root em, and is relative to the font size of the html element. */
     font-size: 0.85rem;
 }
+
+.calories-info h2 {
+    margin: 0;
+}
