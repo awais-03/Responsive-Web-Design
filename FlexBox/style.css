@@ -46,6 +46,8 @@ body {
         The content is resized to cover the entire container while preserving its aspect ratio. The image will fill the container completely, but parts of it may be cut off to maintain the aspect ratio.
   */
   object-fit: cover;
+
+  border-radius: 10px;
 }
 
 /* Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container. */
@@ -77,7 +79,6 @@ column-reverse: vertical axis with flex items from bottom to top */
 
   /* The gap CSS shorthand property sets the gaps, also known as gutters, between rows and columns. The gap property and its row-gap and column-gap sub-properties provide this functionality for flex, grid, and multi-column layout. You apply the property to the container element. */
   gap: 16px;
-
 }
 
 /* .gallery {
