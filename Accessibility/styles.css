@@ -71,3 +71,7 @@ nav > ul > li {
   padding: 0.2rem;
   display: block;
 }
+
+nav ul li a {
+  color: #f1f1f1; /* Very light gray for high contrast */
+}
