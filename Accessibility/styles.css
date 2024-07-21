@@ -33,6 +33,12 @@ header {
   top: 0;
 }
 
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
@@ -40,7 +46,7 @@ h1 {
 }
 
 main {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 /* Child Selector (>) -> Selects direct child elements of a specified element. */
@@ -120,8 +126,8 @@ section {
 }
 
 .formrow {
-  margin-top: 10px;
-  padding: 0 10px 0 10px;
+  margin-top: 30px;
+  padding: 0px 15px;
 }
 
 input {
@@ -160,7 +166,7 @@ p {
 
 .question {
   border: none;
-  padding: 0;
+  padding-bottom: 0;
 }
 .answers-list {
   list-style: none;
@@ -189,6 +195,6 @@ footer {
 }
 
 address {
-  padding: 5px;
   text-align: center;
+  padding: 0.3em;
 }
