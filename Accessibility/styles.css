@@ -14,4 +14,10 @@ body {
 /* The max() function uses the largest value, from a comma-separated list of values, as the property value. */
 #logo {
   width: max(10rem, 18vw);
+  background-color: #0a0a23;
+
+  /* the logo should retain an aspect ratio of 35 / 4, and have padding around the text */
+  /* The aspect-ratio property allows you to define the ratio between width and height of an element. */
+  aspect-ratio: 35/4;
+  padding: 0.4rem;
 }
