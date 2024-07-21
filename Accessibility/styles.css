@@ -21,3 +21,10 @@ body {
   aspect-ratio: 35/4;
   padding: 0.4rem;
 }
+
+header {
+  width: 100%;
+  background-color: #1b1b32;
+  height: 50px;
+  display: flex;
+}
