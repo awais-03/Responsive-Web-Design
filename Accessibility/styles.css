@@ -134,7 +134,14 @@ input {
 }
 
 .info input,
-.info label
-{
+.info label {
   display: inline-block;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
 }
