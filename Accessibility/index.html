@@ -30,10 +30,18 @@
       </nav>
     </header>
     <main>
-        <form action="https://freecodecamp.org/practice-project/accessibility-quiz">
-            <section></section>
-            <section></section>
-            <section></section>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <!-- To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies -->
+            <!-- Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute. -->
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">Html Questions</h2>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">Css Questions</h2>
+            </section>
         </form>
     </main>
   </body>
