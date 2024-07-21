@@ -100,3 +100,9 @@ nav > ul > li:hover {
   color: #1b1b32; /* Very light gray for high contrast */
   background-color: #dfdfe2;
 }
+
+section {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+}
