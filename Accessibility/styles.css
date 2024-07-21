@@ -33,3 +33,9 @@ h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
 }
+
+/* Child Selector (>) -> Selects direct child elements of a specified element. */
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
