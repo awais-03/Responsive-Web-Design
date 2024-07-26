@@ -78,3 +78,13 @@ section {
 .table-wrap {
 	padding: 0 0.75rem 1.5rem 0.75rem;
 }
+
+/* The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, any of your span elements that do not have the sr-only class */
+span:not(.sr-only) {
+	font-weight: normal;
+}
+
+
+
+
+
