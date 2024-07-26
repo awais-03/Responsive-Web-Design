@@ -110,7 +110,17 @@ tbody td {
 	max-width: 4rem;
 }
 
+/* width of the entire container, less 12rem */
 tbody th {
 	width: calc(100% - 12rem);
 }
+
+/* [attribute="value"] selector targets any element that has an attribute with a specific value */
+tr[class="total"] {
+	border: 4px double #0a0a23;
+	font-weight: bold;
+}
+
+
+
 
