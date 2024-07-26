@@ -1,8 +1,13 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: sans-serif;
-	color: #0a0a23;
+  font-family: sans-serif;
+  color: #0a0a23;
+}
+
+/* The ~= (tilde equals) attribute selector is used to select elements with an attribute value that contains a specified word, delimited by whitespace. This is particularly useful for matching individual class names in a space-separated list of class values. */
+span[class~="sr-only"] {
+  border: 0;
 }
