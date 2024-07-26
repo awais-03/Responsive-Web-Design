@@ -64,4 +64,6 @@ section {
 	/* The calc() function takes a single expression as its parameter, and the expression's result is used as the value for a CSS property */
 	margin: 0 -2px;
 	padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+
+	z-index: 999;
 }
