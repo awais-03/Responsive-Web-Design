@@ -81,9 +81,9 @@ section {
 
 /* The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, any of your span elements that do not have the sr-only class */
 /* span:not(.sr-only) { */
-span {
+/* span {
 	font-weight: normal;
-}
+} */
 
 table {
 	/* allow cell borders to collapse into a single border, instead of a border around each cell */
