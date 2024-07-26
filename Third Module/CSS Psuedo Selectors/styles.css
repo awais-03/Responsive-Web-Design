@@ -85,7 +85,11 @@ span {
 	font-weight: normal;
 }
 
-
+table {
+	/* allow cell borders to collapse into a single border, instead of a border around each cell */
+	border-collapse: collapse;
+	border: 0;
+}
 
 
 
