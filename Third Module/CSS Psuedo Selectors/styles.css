@@ -9,21 +9,21 @@ body {
 
 /* The ~= (tilde equals) attribute selector is used to select elements with an attribute value that contains a specified word, delimited by whitespace. This is particularly useful for matching individual class names in a space-separated list of class values. */
 span[class~="sr-only"] {
-  border: 0;
+  border: 0 !important;
 
 	/* deprecated */
 	/* clip: rect(1px, 1px, 1px, 1px); */
 
 	/* hides the element */
-	clip-path: inset(50%);
+	clip-path: inset(50%) !important;
 
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	white-space: nowrap;
-	position: absolute;
-	padding: 0;
-	margin: -1px;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	position: absolute !important;
+	padding: 0 !important;
+	margin: -1px !important;
 }
 
 h1 {
