@@ -89,6 +89,9 @@ table {
 	/* allow cell borders to collapse into a single border, instead of a border around each cell */
 	border-collapse: collapse;
 	border: 0;
+	width: 100%;
+	position: relative;
+	margin-top: 3rem;
 }
 
 
