@@ -103,4 +103,10 @@ table caption {
 	left: 0.5rem;
 }
 
+tbody td {
+	/* This approach ensures that the width is fixed, whereas setting width specifically would allow the elements to shrink to the container. */
+	width: 100vw;
+	min-width: 4rem;
+	max-width: 4rem;
+}
 
