@@ -58,4 +58,6 @@ section {
 	justify-content: flex-end;
 	position: sticky; 
 	top: 0;
+	color: #ffffff;
+	background-color: #0a0a23;
 }
