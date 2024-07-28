@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Document</title>
+</head>
+<body>
+	<!-- There are two common scenarios where a position: sticky element will not stick to the window as intended:
+	No inset property has been defined: Make sure the sticky element has top or bottom set. Or in the case of horizontal scrolling, left or right.
+	One of the element’s ancestors has incompatible overflow: If any of the parents or ancestors of the sticky element have overflow set to hidden, scroll, or auto. This also applies to overflow-x and overflow-y. -->
+
+	<!-- An element with position: sticky will behave like a relatively-positioned element until it reaches a specified point and then starts behaving like a statically-positioned element. -->
+
+	<div class="container">
+		<div class="item shark-1">
+			<img
+				src="https://assets.digitalocean.com/labs/sammy/Sammy_punk.png"
+				width="100"
+				alt="Sammy the Shark with a punk theme."
+			>
+		</div>
+		<div class="item shark-2">
+			<img
+				src="https://assets.digitalocean.com/labs/sammy/Sammy_pony.png"
+				width="100"
+				alt="Sammy the Shark with a magical pony theme."
+			>
+		</div>
+		<div class="item shark-3">
+			<img
+				src="https://assets.digitalocean.com/labs/sammy/Sammy_stickers_SET03.png"
+				width="100"
+				alt="Sammy the Shark with a dinosaur theme."
+			>
+		</div>
+		<div class="item shark-4">
+			<img
+				src="https://assets.digitalocean.com/labs/sammy/Sammy_stickers_SET01.png"
+				width="100"
+				alt="Sammy the Shark with a steampunk theme."
+			>
+		</div>
+	</div>
+</body>
+</html>
+
