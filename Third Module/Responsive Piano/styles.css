@@ -44,6 +44,7 @@ html {
 	left: -18px;
 	width: 32px;
 	height: 100px;
+  border-radius: 0 0 3px 3px;
 }
 
 .logo {
@@ -58,7 +59,7 @@ html {
 	}
 
 	.keys {
-		width: 318px;
+		width: 319px;
 	}
 
 	.logo {
@@ -67,5 +68,11 @@ html {
 }
 
 @media (min-width:769px) and (max-width:1199px) {
-	
+	#piano {
+		width: 675px;
+	}
+
+	.keys {
+		width: 634px;
+	}
 }
