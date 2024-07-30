@@ -79,6 +79,11 @@ body {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-bottom: 40px solid #3b3b4f;
+
+	/* Move the inner ear into position */
+	position: absolute;
+	top: 22px;
+	left: -20px;
 }
 
 
