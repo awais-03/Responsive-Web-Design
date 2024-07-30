@@ -53,8 +53,8 @@ body {
 	transform:rotate(-45deg); /* Specifies a 2D rotation by the angle specified in the parameter about the origin of the element, as defined by the transform-origin property. */
 
 	/* z-index lets you define the order of overlapping HTML elements. Any element with a higher z-index will always be positioned over an element with a lower z-index. */
-	/* takes ear behind the cat-head div */
-	z-index: -1;
+	/* -1 takes ear behind the cat-head div */
+	z-index: 1;
 }
 
 .cat-right-ear {
