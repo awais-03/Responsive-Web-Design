@@ -107,10 +107,17 @@ body {
 }
 
 .cat-left-eye {
-	/* Here it appears as an eye because the ear overlaps it and its z-index is greater */
+	/* with only these properties it appears as an eye because the ear overlaps it and its z-index is greater */
 	width: 30px;
 	height: 40px;
 	background-color: #000;
+
+	position: absolute;
+	top: 54px;
+	left: 39px;
+
+	border-radius: 60%;
+	transform: rotate(25deg);
 }
 
 
