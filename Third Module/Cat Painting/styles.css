@@ -43,4 +43,7 @@ body {
 	position: absolute;
 	top: -26px;
 	left: -31px;
+
+	border-top-left-radius: 90px;
+	border-top-right-radius: 10px;
 }
