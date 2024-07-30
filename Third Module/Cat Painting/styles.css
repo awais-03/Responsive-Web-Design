@@ -105,3 +105,13 @@ body {
 	border-top-left-radius: 90px;
 	border-top-right-radius: 10px;
 }
+
+.cat-left-eye {
+	/* Here it appears as an eye because the ear overlaps it and its z-index is greater */
+	width: 30px;
+	height: 40px;
+	background-color: #000;
+}
+
+
+
