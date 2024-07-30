@@ -53,4 +53,9 @@ body {
 	transform:rotate(-45deg); /* Specifies a 2D rotation by the angle specified in the parameter about the origin of the element, as defined by the transform-origin property. */
 }
 
+.cat-right-ear {
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 70px solid #5e5e5e;
+}
 
