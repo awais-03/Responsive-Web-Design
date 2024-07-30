@@ -31,3 +31,12 @@ html {
 	margin: 2px;
 	float: left;
 }
+
+.key.black--key::after {
+	content: '';
+	/* width: 20px;
+	height: 130px; */
+	background-color: #1d1e22;
+}
+
+
