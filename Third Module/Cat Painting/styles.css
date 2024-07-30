@@ -121,7 +121,6 @@ body {
 }
 
 .cat-right-eye {
-	/* with only these properties it appears as an eye because the ear overlaps it and its z-index is greater */
 	width: 30px;
 	height: 40px;
 	background-color: #000;
@@ -132,6 +131,12 @@ body {
 
 	border-radius: 60%;
 	transform: rotate(-25deg);
+}
+
+.cat-left-inner-eye {
+	width: 10px;
+	height: 20px;
+	background-color: #fff;
 }
 
 
