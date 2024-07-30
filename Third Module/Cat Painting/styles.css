@@ -148,4 +148,20 @@ body {
 
 }
 
+.cat-right-inner-eye {
+	width: 10px;
+	height: 20px;
+	background-color: #fff;
+
+	/* here if we only give it top, we can see that its direction is changed because of it parent has been rotated at 45 deg  */
+	position: absolute;
+	top: 8px;
+	left: 18px;
+
+  border-radius: 60%;
+	transform: rotate(-5deg);
+
+}
+
+
 
