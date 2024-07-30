@@ -61,5 +61,7 @@ body {
 	position: absolute;
 	top: -26px;
 	left: 163px; 
+
+	transform: rotate(45deg);
 }
 
