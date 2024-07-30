@@ -32,6 +32,7 @@ html {
 
 	margin: 2px;
 	float: left;
+	border-radius: 0 0 3px 3px;
 }
 
 /* ::before, ::after are like html elemets like span etc but we create them for styling purposes */
