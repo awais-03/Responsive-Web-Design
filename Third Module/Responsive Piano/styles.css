@@ -35,11 +35,11 @@ html {
 /* ::before, ::after are like html elemets like span etc but we create them for styling purposes */
 .key.black--key::after {
 	content: '';
-	/* width: 20px;
-	height: 130px; */
 	background-color: #1d1e22;
 	position: absolute;
 	left: -18px;
+	width: 32px;
+	height: 100px;
 }
 
 
