@@ -1,0 +1,88 @@
+/*
+  flex-grow	A number specifying how much the item will grow relative to the rest of the flexible items inside the same container.	Fills empty space that is left when the container is bigger than the flex items 
+  flex-shrink	A number specifying how the item will shrinkx relative to the rest of the flexible items inside the same container.	When the flex items are overflowing their container, this value specifies how much an item will shrink in order to prevent overflow.
+  flex-basis: Initial length of a flexible item.. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit
+*/
+
+/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+/* @media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+} */
+
+/* Let the second flex-item grow three times wider than the rest:
+div:nth-of-type(1) {flex-grow: 1;}
+div:nth-of-type(2) {flex-grow: 3;}
+div:nth-of-type(3) {flex-grow: 1;} */
+
+/* Let the second flex-item shrink three times more than the rest:
+div:nth-of-type(2) {
+  flex-shrink: 3;
+} */
+
+/* flex items take the size according to their content. if we want to give custom width and height, we need to define them */
+/* flex: 1 300px; Each flex item will first be given 300px of the available space. After that, the rest of the available space will be shared according to the proportion units. */
+
+
+/* justify-content -> aligns items on main-axis. */
+/*
+align-items -> align items on cross-axis.
+  normal/stretch. This, by default, stretches all flex items to fill the parent in the direction of the cross axis. If the parent doesn't have a fixed size in the cross axis direction, then all flex items will become as tall (or wide) as the tallest (or widest) flex item. We can override the align-items behavior for individual flex items by applying the align-self property to them
+  flex-start will make items take width they have and align on start on cros-axis
+  center, flex-end
+*/
+/*
+align-content -> used on multiline flexbox containers.
+*/
+/*
+flex-wrap -> Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+*/
+/*
+flex-flow: row wrap; shorthand for flex-direction and flex-wrap
+*/
+/*
+flex -> flex-grow, flex-shrink, flex-basis.
+*/
+
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: purple;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+section {
+  display: flex;
+}
+
+/* There are now four proportion units available in total (since 1 + 1 + 2 = 4). The first two flex items have one unit each, so they each take 1/4 of the available space. The third one has two units, so it takes up 2/4 of the available space (or one-half). */
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+
+  /* 1 1 0 */
+  flex: 1 300px;
+}
+
+article:nth-of-type(3) {
+  /* 2 1 0 */
+  flex: 2 300px;
+}
+
+
