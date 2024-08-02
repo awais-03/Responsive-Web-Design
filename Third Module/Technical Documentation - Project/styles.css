@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+/* body font-size is 16px by-default */
+body {
+	position: relative;
+	font-family: sans-serif;
+	font-size: 1.6rem; /* 16px */
+	display: flex;
+	color: #4d4e53;
+	line-height: 2.3rem;
+}
+
+nav {
+	position: fixed;
+	width: 305px;
+	min-width: 290px;
+	flex: 2;
+	border-right: 3px solid #4d4e53;
+
+	/* nav element will occupy the full height of its parent */
+	height: 100%;
+}
+
+/* the element needs to have a defined height so that it knows when the content is overflowing */
+/* The reason you need to set the height for the nav and ul elements is that the overflow-y: auto property only works when there is a specified height. */
+nav ul {
+	/* the ul element occupy 89% of the height of the nav element */
+	height: 89%;
+
+	/* For an overflow setting to create the desired effect, the block-level element must have either a set height (height or max-height) if the overflow is in the vertical direction */
+	overflow-y: auto;
+}
+
+nav header {
+	padding: 1.7rem 3.2rem;
+}
+
+main {
+	flex: 8;
+	margin-left: 300px;
+}
+
+header {
+	font-size: 2.9rem;
+	color: black;
+}
+
+nav ul li {
+	list-style: none;
+	font-size: 1.6rem;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 1rem 3rem;
+	display: block;
+	color: inherit;
+	border-top: 1px solid #4d4e53;
+}
+
+section {
+	margin: 3.4rem;
+}
+
+section article {
+	font-size: 1.536rem;
+	margin: 2.4rem 1.3rem 2.7rem 1.3rem;
+	color: #4d4e53;
+}
+
+article p {
+	margin: 1.536rem 0;
+}
+
+article ul li {
+		margin: 1.7rem 0 0 6.1rem;
+}
+
+code {
+	display: block;
+	font-size: 1.2rem;
+	margin: 1rem;
+	padding: 1.5rem;
+	background-color: #f7f7f7;
+	border-radius: 0.5rem;
+	line-height: 2.5rem;
+	white-space: pre-line;
+}
