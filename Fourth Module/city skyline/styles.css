@@ -1,3 +1,12 @@
+:root {
+	/* css variables are passed from parent to child. so its good to declare them in root element */
+	/* CSS Variables */
+	--building-color1:#aa80ff;
+	--building-color2:#66cc99;
+	--building-color3:#cc6699;
+	--building-color4:#538cc6;
+}
+
 * {
 	box-sizing: border-box;
 	border: 1px solid black;
@@ -24,11 +33,6 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-
-	/* CSS Variables */
-	--building-color1:#aa80ff;
-	--building-color2:#66cc99;
-	--building-color3:#cc6699;
 }
 
 .bb1a {
@@ -68,4 +72,47 @@ body {
 .bb4 {
 	width: 11%;
 	height: 58%;
+	background-color: var(--building-color4, pink);
+}
+
+.foreground-buildings {
+	/* to sit directly on top of the .background-buildings element */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
+}
+
+.fb1 {
+	width: 10%;
+	height: 60%;
+}
+
+.fb2 {
+	width: 10%;
+	height: 40%;
+}
+
+.fb3 {
+	width: 10%;
+	height: 35%;
+}
+
+.fb4 {
+	width: 8%;
+	height: 45%;
+}
+
+.fb5 {
+	width: 10%;
+	height: 33%;
+}
+
+.fb6 {
+	width: 9%;
+	height: 38%;
 }
