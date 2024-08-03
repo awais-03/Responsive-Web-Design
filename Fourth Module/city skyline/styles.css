@@ -57,7 +57,13 @@ body {
 .bb1d {
 	width: 100%;
 	height: 70%;
-	background-color: var(--building-color1);
+	/* background-color: var(--building-color1); */
+	/* background: linear-gradient(orange, var(--building-color1), var(--window-color1)); */
+	/* background: linear-gradient(orange, var(--building-color1) 80%, var(--window-color1)); */
+
+	/* This will make --building-color1 solid for the top half, and then transition to --window-color1 for the bottom half */
+	background: linear-gradient(var(--building-color1) 50%, var(--window-color1));
+
 }
 
 .bb2 {
