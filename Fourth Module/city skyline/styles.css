@@ -18,12 +18,15 @@ body {
 	overflow: hidden;
 }
 
-.background-buildings {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-evenly;
+/* to sit directly on top of one another */
+.background-buildings, .foreground-buildings {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
 }
 
 .bb1 {
@@ -73,23 +76,6 @@ body {
 	width: 11%;
 	height: 58%;
 	background-color: var(--building-color4, pink);
-}
-
-.background-buildings, .foreground-buildings {
-	position: absolute;
-	top: 0;
-}
-
-.foreground-buildings {
-	/* to sit directly on top of the .background-buildings element */
-	width: 100%;
-	height: 100%;
-	/* position: absolute;
-	top: 0; */
-
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-evenly;
 }
 
 .fb1 {
