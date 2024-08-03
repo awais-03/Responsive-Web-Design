@@ -31,6 +31,10 @@ body {
   top: 0;
 }
 
+.bb1-window {
+	background: linear-gradient(var(--building-color1), var(--window-color1));
+}
+
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
 	width: 10%;
@@ -43,18 +47,12 @@ body {
 
 .bb1a {
 	width: 70%;
-	height: 10%;
-	background-color: var(--building-color1);
 }
 .bb1b {
 	width: 80%;
-	height: 10%;
-	background-color: var(--building-color1);
 }
 .bb1c {
 	width: 90%;
-	height: 10%;
-	background-color: var(--building-color1);
 }
 .bb1d {
 	width: 100%;
