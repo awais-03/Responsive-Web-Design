@@ -153,13 +153,54 @@ border-right: 1vw solid #999; */
 .fb1 {
 	width: 10%;
 	height: 60%;
+}
+
+.fb1a {
+	border-bottom: 7vh solid var(--building-color4);
+	border-left: 2vw solid transparent;
+	border-right: 2vw solid transparent;
+}
+
+.fb1b {
+	width: 60%;
+	height: 10%;
 	background-color: var(--building-color4);
+}
+
+.fb1c {
+	width: 100%;
+	height: 80%;
+	/* background: linear-gradient(90deg, var(--building-color4) 0%, var(--building-color4) 10%, transparent 10%, transparent 15%); */
+
+	/* from 0-10, gives color, then from 10-15 makes a transparent color. Hence making a strip form */
+	/* background: repeating-linear-gradient(90deg, var(--building-color4) 0%, var(--building-color4) 10%, transparent 10%, transparent 15%); */
+	/* background: repeating-linear-gradient(var(--building-color4) 0%, var(--building-color4) 10%, var(--window-color4) 10%, var(--window-color4) 90%); */
+
+	/* here we are giving two linear-gradients. first one will create colored and transparent at 90deg. second one will fill in the transparent part with --window-color4 */
+	background: repeating-linear-gradient( 90deg, var(--building-color4), var(--building-color4) 10%, transparent 10%, transparent 15% )
+		,repeating-linear-gradient(var(--building-color4) 0%, var(--building-color4) 10%, var(--window-color4) 10%, var(--window-color4) 90%);
+
 }
 
 .fb2 {
 	width: 10%;
 	height: 40%;
 	background-color: var(--building-color3);
+}
+
+.fb2a {
+	width: 100%;
+}
+
+.fb2b {
+	width: 100%;
+	height: 75%;
+}
+
+.fb2-window {
+	width: 22%;
+	height: 100%;
+	background-color: var(--window-color3);
 }
 
 .fb3 {
