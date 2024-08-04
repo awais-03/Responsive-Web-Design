@@ -185,16 +185,19 @@ border-right: 1vw solid #999; */
 .fb2 {
 	width: 10%;
 	height: 40%;
-	background-color: var(--building-color3);
 }
 
 .fb2a {
 	width: 100%;
+	border-bottom: 10vh solid var(--building-color3);
+	border-left: 1vw solid transparent;
+	border-right: 1vw solid transparent;
 }
 
 .fb2b {
 	width: 100%;
 	height: 75%;
+	background-color: var(--building-color3);
 }
 
 .fb2-window {
@@ -205,6 +208,17 @@ border-right: 1vw solid #999; */
 
 .fb3 {
 	width: 10%;
+	height: 35%;
+}
+
+.fb3a {
+	width: 80%;
+	height: 15%;
+	background-color: var(--building-color1);
+}
+
+.fb3b {
+	width: 100%;
 	height: 35%;
 	background-color: var(--building-color1);
 }
